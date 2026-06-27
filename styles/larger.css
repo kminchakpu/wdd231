@@ -48,9 +48,11 @@
   padding: 0.5rem 1rem;
 } 
 
+
 .navigation li a:not(.active):hover {
-  color: #ffd700; 
+  background-color: #ffd700; 
   text-decoration: none;
+  color: var(--dark-text);
 }
 
 h2 {  
