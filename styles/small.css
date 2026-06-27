@@ -151,6 +151,8 @@ h2 {
 
 .about p {
   margin-bottom: 1rem;
+  font-size: 1.2rem;
+  padding: 0 20px;
 }
 
 .image-placeholder {
@@ -214,6 +216,27 @@ h2 {
   border-left: 5px solid var(--accent); 
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+
+p:has(#total-credits) {
+  font-family: var(--heading-font);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text); 
+  background-color: var(--surface); 
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-top: 1rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+
+#total-credits {
+  color: var(--accent);
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
 }
 
 /* --- Footer --- */
