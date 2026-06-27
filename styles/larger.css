@@ -89,7 +89,7 @@ h2 {
 
 .course-card {
   padding: 1rem;
-  background-color: var(--khaki); 
+  background-color: var(--graphite); 
   color: var(--text);  
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
@@ -141,8 +141,8 @@ h2 {
   }
 
   .course-card {
-  background-color: var(--khaki);
-  border: 1px solid #ddd;
+  background-color: var(--graphite);
+  border: 1px solid var(--accent);
   padding: 1.5rem;
   border-radius: 5px;
   text-align: center;

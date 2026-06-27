@@ -5,6 +5,7 @@
     --accent: #F5BB00;
     --text: #F8FAFC;
     --dark-text: #242424;
+    --graphite: #333333;
     --radius: 4px;
     --nav-font: "Play", sans-serif;
     --heading-font: "Play", sans-serif;
@@ -197,7 +198,7 @@ h2 {
 /* Course cards */
 .course-card {
   padding: 1rem;
-  background-color: var(--khaki); 
+  background-color: var(--graphite); 
   color: var(--text); 
   border-left: 5px solid var(--accent); 
   border-radius: 4px;
