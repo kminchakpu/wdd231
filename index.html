@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kevin Cross Minchakpu | WDD231 Home</title>
+<meta name="description" content="Homepage for the WDD231 Frontend Web Development course featuring student projects, web design assignments, and learning resources.">
+<meta name="author" content="Kevin Cross Minchakpu">
+
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+<!--Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!--JavaScripts-->
+<script src="scripts/navigation.js" defer></script>
+<script src="scripts/date.js" defer></script>
+<script src="scripts/course.js" defer></script>
+
+</head>
+
+<body>
+<!--Header-->
+<header class="site-header">
+  <div class="header-top">
+    <div class="logo">
+      <img src="images/logo.svg" alt="site logo" class="logo-icon">
+      <span>Kevin Cross Minchakpu</span>
+      <button type="button" id="menu">☰</button>
+    </div>
+    </div>
+
+  <nav class="main-nav">
+    <ul class="navigation">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#">Chamber Project</a></li>
+      <li><a href="#">Final Project</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!--Main Section-->
+<main>
+  <h1>Home</h1>
+  <div class="top-container">
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+       Hello! I’m Kevin Cross Minchakpu, and I build things with code. Currently, I’m pursuing a degree in Software Development at Brigham Young University-Idaho (BYU-Idaho), studying remotely from Abuja, Nigeria. For me, software development isn't just about logic—it's also about creativity. One of my favorite things to do is treat the browser like a gallery, using JavaScript to paint on the HTML5 Canvas.
+
+        I’m deeply dedicated to mastering new frameworks and languages, always aiming to build software that has a real, positive impact on people's daily lives. The tech industry is evolving fast, and I’m excited to be a part of its future.
+
+        Let's connect! You can dive into my code and projects by visiting my <a href="https://kminchakpu.github.io/wdd231/">GitHub Page</a>.
+       
+      </p>
+    </section>
+<section class="photo">
+  <h2>My Photo</h2>
+  <div class="image-placeholder">
+    <img src="images/kevin.webp" alt="Kevin Cross Minchakpu photo" width="140">
+  </div>
+</section>
+  </div>
+
+  <section class="courses">
+    <h2>Web Certificate Courses</h2>
+    <div class="buttons">
+      <button type="button" id="btn-all">All</button>
+      <button type="button" id="btn-cse">CSE</button>
+      <button type="button" id="btn-wdd">WDD</button>
+    </div>
+    <div id="course-container"></div>
+    <p>Total Credits: <span id="total-credits"></span></p>
+  </section>
+</main>
+
+<!--Footer-->
+<footer>
+  <div class="social">
+    <a href="https://linkedin.com">
+  <img src="images/linkedin.svg" alt="LinkedIn social media icon" width="40"></a>
+    <a href="https://github.com">
+  <img src="images/github.svg" alt="GitHub developer profile icon" width="40"></a>
+    <a href="https://facebook.com">
+  <img src="images/facebook.svg" alt="Facebook social media icon" width="40"></a>
+  </div>
+  <p>
+    © <span id="year"></span> Kevin Cross Minchakpu | Abuja, Nigeria
+  </p>
+  <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
