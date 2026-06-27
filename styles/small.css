@@ -218,6 +218,12 @@ h2 {
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
+.course-card.completed {
+  background-color: #0CCE6B; 
+  border-color: var(--accent);
+  color: var(--dark-text);
+}
+
 
 p:has(#total-credits) {
   font-family: var(--heading-font);

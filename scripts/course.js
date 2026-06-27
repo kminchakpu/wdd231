@@ -1,3 +1,4 @@
+// Complete Course Data Matrix
 const courses = [
     {
         subject: 'CSE',
@@ -61,28 +62,78 @@ const courses = [
     }
 ];
 
-// Select DOM elements
-const courseContainer = document.querySelector('#course-container');
-const totalCreditsDisplay = document.querySelector('#total-credits');
+// Declare DOM target variables globally
+let courseContainer;
+let totalCreditsDisplay;
 
+// Safely initialize elements once the HTML DOM tree finishes parsing in the browser
+document.addEventListener('DOMContentLoaded', () => {
+    // Select DOM containers
+    courseContainer = document.querySelector('#course-container');
+    totalCreditsDisplay = document.querySelector('#total-credits');
+
+    // Attach Click Listeners to Filter Buttons and update their active state
+    document.querySelector('#btn-all').addEventListener('click', () => {
+        displayCourses('all');
+        setActiveButton('#btn-all');
+    });
+    
+    document.querySelector('#btn-cse').addEventListener('click', () => {
+        displayCourses('CSE');
+        setActiveButton('#btn-cse');
+    });
+    
+    document.querySelector('#btn-wdd').addEventListener('click', () => {
+        displayCourses('WDD');
+        setActiveButton('#btn-wdd');
+    });
+
+    // Run layout defaults on page start
+    displayCourses('all');
+    setActiveButton('#btn-all');
+});
+
+// Helper function to manage active styling state across button groups
+function setActiveButton(activeButtonId) {
+    const buttons = document.querySelectorAll('.buttons button');
+    
+    // Clear the active formatting class from all sister buttons
+    buttons.forEach(button => button.classList.remove('active'));
+    
+    // Target and apply the active formatting class specifically to the clicked option
+    const clickedButton = document.querySelector(activeButtonId);
+    if (clickedButton) {
+        clickedButton.classList.add('active');
+    }
+}
+
+// Core render engine function
 function displayCourses(filter = 'all') {
-    // Clear the container
+    // Safety check to ensure DOM references exist before rendering execution
+    if (!courseContainer || !totalCreditsDisplay) return;
+
+    // Flush out previous cards
     courseContainer.innerHTML = '';
 
-    // Filter the courses
+    // Step 1: Filter raw data arrays
     const filteredCourses = filter === 'all' 
         ? courses 
         : courses.filter(course => course.subject === filter);
 
-    // Render the cards
+    // Step 2: Render individual module cards
     filteredCourses.forEach(course => {
         const card = document.createElement('div');
         card.className = `course-card ${course.completed ? 'completed' : ''}`;
         
-        // Add course content
-        card.innerHTML = `<strong>${course.subject} ${course.number}</strong>`;
+          card.innerHTML = `
+            <h3>${course.subject} ${course.number}: ${course.title}</h3>
+            <p class="course-credits"><strong>Credits:</strong> ${course.credits}</p>
+            <p class="course-certificate"><strong>Certificate:</strong> ${course.certificate}</p>
+            <p class="course-description">${course.description}</p>
+            <p class="course-tech"><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+        `;
         
-        // Optional: Add click event to show course details
+        // Modal detail box remains intact as an alternate accessibility option
         card.addEventListener('click', () => {
             alert(`${course.title}\n\n${course.description}\n\nTechnologies: ${course.technology.join(', ')}`);
         });
@@ -90,15 +141,7 @@ function displayCourses(filter = 'all') {
         courseContainer.appendChild(card);
     });
 
-    // Calculate total credits for the displayed courses
+    // Run reduce calculations based exclusively on visible cards 
     const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
     totalCreditsDisplay.textContent = totalCredits;
 }
-
-// Event Listeners for buttons
-document.querySelector('#btn-all').addEventListener('click', () => displayCourses('all'));
-document.querySelector('#btn-cse').addEventListener('click', () => displayCourses('CSE'));
-document.querySelector('#btn-wdd').addEventListener('click', () => displayCourses('WDD'));
-
-// Initial call to display all courses
-displayCourses();
