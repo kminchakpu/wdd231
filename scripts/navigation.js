@@ -9,7 +9,7 @@ menuButton.addEventListener('click', () => {
     
     // Change the button icon from ☰ to X when open
     if (navigation.classList.contains('show')) {
-        menuButton.textContent = '❌';
+        menuButton.textContent = 'X';
     } else {
         menuButton.textContent = '☰';
     }

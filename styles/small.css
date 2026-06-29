@@ -152,7 +152,7 @@ h2 {
   border: 2px solid var(--accent); 
   border-radius: var(--radius); 
   height: auto; 
-  max-width: 200px; 
+  max-width: 400px; 
 }
 
 /* --- Courses Section --- */
