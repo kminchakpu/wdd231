@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 900" width="100%" height="auto">
+  <defs>
+    <style>
+      .bg-canvas { fill: #f1f5f9; }
+      .bg-main { fill: #f8f9fa; }
+      .bg-card { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1; }
+      .bg-wireframe { fill: #e2e8f0; stroke: #94a3b8; stroke-width: 1; }
+      .text-primary { font-family: 'Play', 'Segoe UI', sans-serif; font-size: 15px; fill: #172A3A; font-weight: bold; text-anchor: middle; }
+      .text-body { font-family: 'Segoe UI', sans-serif; font-size: 13px; fill: #475569; }
+      .text-muted { font-family: 'Segoe UI', sans-serif; font-size: 12px; fill: #64748b; }
+      .text-muted-center { font-family: 'Segoe UI', sans-serif; font-size: 12px; fill: #64748b; text-anchor: middle; }
+      .text-header-title { font-family: 'Play', sans-serif; font-size: 16px; fill: #172A3A; font-weight: bold; }
+      .bar-label { fill: #475569; }
+      .bar-text { font-family: 'Play', sans-serif; font-size: 14px; fill: #ffffff; font-weight: bold; text-anchor: middle; }
+      .cross-line { stroke: #94a3b8; stroke-width: 1; stroke-dasharray: 3 3; }
+      .btn-bg { fill: #cbd5e1; stroke: #94a3b8; stroke-width: 1; rx: 4; }
+      .btn-text { font-family: 'Segoe UI', sans-serif; font-size: 11px; fill: #172A3A; font-weight: bold; text-anchor: middle; }
+    </style>
+  </defs>
+  
+  <rect width="830" height="900" class="bg-canvas" />
+
+  <g id="mobile-screen-1" transform="translate(15, 0)">
+    <rect width="400" height="900" class="bg-main" stroke="#cbd5e1" stroke-width="1" />
+    <g id="m1-header-zone">
+      <rect x="15" y="15" width="370" height="65" class="bg-wireframe" />
+      <rect x="25" y="30" width="30" height="30" fill="none" stroke="#94a3b8" stroke-width="1.5" />
+      <polygon points="25,55 35,42 42,49 49,38 55,55" fill="none" stroke="#94a3b8" stroke-width="1.5" />
+      <circle cx="48" cy="38" r="2.5" fill="none" stroke="#94a3b8" stroke-width="1.5" />
+      <text x="65" y="44" class="text-header-title">Kano Chamber</text>
+      <text x="65" y="60" class="text-header-title" font-size="14">of Commerce</text>
+      <circle cx="315" cy="48" r="9" fill="none" stroke="#172A3A" stroke-width="1.5" />
+      <path d="M 315,39 A 9,9 0 0,1 315,57 Z" fill="#172A3A" />
+      <line x1="345" y1="40" x2="368" y2="40" stroke="#172A3A" stroke-width="2.5" stroke-linecap="round" />
+      <line x1="345" y1="48" x2="368" y2="48" stroke="#172A3A" stroke-width="2.5" stroke-linecap="round" />
+      <line x1="345" y1="56" x2="368" y2="56" stroke="#172A3A" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+    <g id="m1-hero-zone">
+      <rect x="15" y="95" width="370" height="160" class="bg-wireframe" />
+      <line x1="15" y1="95" x2="385" y2="255" class="cross-line" />
+      <line x1="15" y1="255" x2="385" y2="95" class="cross-line" />
+      <rect x="245" y="210" width="125" height="30" class="btn-bg" />
+      <text x="307" y="229" class="btn-text">Keynote Tickets</text>
+    </g>
+    <text x="15" y="295" font-family="'Play', sans-serif" font-size="24" font-weight="bold" fill="#172A3A">Home</text>
+    <g id="m1-events-card">
+      <rect x="15" y="315" width="370" height="180" class="bg-card" />
+      <rect x="15" y="315" width="370" height="32" class="bar-label" />
+      <text x="185" y="336" class="bar-text">Events</text>
+      <rect x="25" y="360" width="350" height="120" fill="#f1f5f9" stroke="#e2e8f0" />
+    </g>
+    <g id="m1-current-weather-card">
+      <rect x="15" y="515" width="370" height="210" class="bg-card" />
+      <rect x="15" y="515" width="370" height="32" class="bar-label" />
+      <text x="185" y="536" class="bar-text">Current Weather</text>
+      <circle cx="60" cy="585" r="15" fill="none" stroke="#94a3b8" stroke-width="2" />
+      <path d="M 52,597 C 52,589 75,585 80,593 C 88,593 88,605 75,605 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5" />
+      <text x="110" y="585" font-family="'Play', sans-serif" font-size="20" font-weight="bold" fill="#172A3A">75° F</text>
+      <text x="110" y="603" class="text-body" font-weight="600">Party Cloudy</text>
+      <text x="30" y="635" class="text-body">High: 85°</text>
+      <text x="150" y="635" class="text-body">Low: 52°</text>
+      <text x="30" y="660" class="text-body">Humidity: 34%</text>
+      <text x="30" y="685" class="text-muted">Sunrise: 7:30am</text>
+      <text x="190" y="685" class="text-muted">Sunset: 9:59pm</text>
+    </g>
+    <g id="m1-weather-forecast-card">
+      <rect x="15" y="740" width="370" height="145" class="bg-card" />
+      <rect x="15" y="740" width="370" height="32" class="bar-label" />
+      <text x="185" y="761" class="bar-text">Weather Forecast</text>
+      <text x="30" y="800" class="text-body">Today: <tspan font-weight="bold" fill="#172A3A">90°F</tspan></text>
+      <line x1="30" y1="813" x2="370" y2="813" stroke="#e2e8f0" />
+      <text x="30" y="840" class="text-body">Wednesday: <tspan font-weight="bold" fill="#172A3A">89°F</tspan></text>
+    </g>
+  </g>
+
+  <g id="mobile-screen-2" transform="translate(415, 0)">
+    <rect width="400" height="900" class="bg-main" stroke="#cbd5e1" stroke-width="1" />
+    
+    <g id="m2-forecast-continuation" transform="translate(0, 0)">
+      <rect x="15" y="15" width="370" height="50" class="bg-card" />
+      <text x="30" y="45" class="text-body">Thursday: <tspan font-weight="bold" fill="#172A3A">68°F</tspan></text>
+    </g>
+
+    <g id="m2-spotlight-card-1" transform="translate(15, 80)">
+      <rect x="0" y="0" width="370" height="115" class="bg-card" rx="6" />
+      <text x="185" y="22" class="text-primary">Business Name</text>
+      <text x="185" y="38" class="text-muted-center" font-style="italic">Business Tag Line</text>
+      <line x1="15" y1="46" x2="355" y2="46" stroke="#cbd5e1" />
+      <rect x="15" y="55" width="65" height="48" class="bg-wireframe" />
+      <line x1="15" y1="55" x2="80" y2="103" class="cross-line" />
+      <line x1="15" y1="103" x2="80" y2="55" class="cross-line" />
+      <text x="92" y="68" class="text-muted" font-weight="bold">EMAIL: <tspan class="text-body" font-weight="normal">info@gmail.com</tspan></text>
+      <text x="92" y="84" class="text-muted" font-weight="bold">PHONE: <tspan class="text-body" font-weight="normal">800-555-1234</tspan></text>
+      <text x="92" y="100" class="text-muted" font-weight="bold">URL: <tspan class="text-body" font-weight="normal">mybusiness.com</tspan></text>
+    </g>
+    
+    <g id="m2-spotlight-card-2" transform="translate(15, 210)">
+      <rect x="0" y="0" width="370" height="115" class="bg-card" rx="6" />
+      <text x="185" y="22" class="text-primary">Business Name</text>
+      <text x="185" y="38" class="text-muted-center" font-style="italic">Business Tag Line</text>
+      <line x1="15" y1="46" x2="355" y2="46" stroke="#cbd5e1" />
+      <rect x="15" y="55" width="65" height="48" class="bg-wireframe" />
+      <line x1="15" y1="55" x2="80" y2="103" class="cross-line" />
+      <line x1="15" y1="103" x2="80" y2="55" class="cross-line" />
+      <text x="92" y="68" class="text-muted" font-weight="bold">EMAIL: <tspan class="text-body" font-weight="normal">info@gmail.com</tspan></text>
+      <text x="92" y="84" class="text-muted" font-weight="bold">PHONE: <tspan class="text-body" font-weight="normal">800-555-1234</tspan></text>
+      <text x="92" y="100" class="text-muted" font-weight="bold">URL: <tspan class="text-body" font-weight="normal">mybusiness.com</tspan></text>
+    </g>
+
+    <g id="m2-spotlight-card-3" transform="translate(15, 340)">
+      <rect x="0" y="0" width="370" height="115" class="bg-card" rx="6" />
+      <text x="185" y="22" class="text-primary">Business Name</text>
+      <text x="185" y="38" class="text-muted-center" font-style="italic">Business Tag Line</text>
+      <line x1="15" y1="46" x2="355" y2="46" stroke="#cbd5e1" />
+      <rect x="15" y="55" width="65" height="48" class="bg-wireframe" />
+      <line x1="15" y1="55" x2="80" y2="103" class="cross-line" />
+      <line x1="15" y1="103" x2="80" y2="55" class="cross-line" />
+      <text x="92" y="68" class="text-muted" font-weight="bold">EMAIL: <tspan class="text-body" font-weight="normal">info@gmail.com</tspan></text>
+      <text x="92" y="84" class="text-muted" font-weight="bold">PHONE: <tspan class="text-body" font-weight="normal">800-555-1234</tspan></text>
+      <text x="92" y="100" class="text-muted" font-weight="bold">URL: <tspan class="text-body" font-weight="normal">mybusiness.com</tspan></text>
+    </g>
+
+    <g id="m2-footer-zone" transform="translate(15, 470)">
+      <rect x="0" y="0" width="370" height="175" fill="#e2e8f0" stroke="#cbd5e1" />
+      <text x="15" y="22" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#172A3A">Kano Chamber of Commerce</text>
+      <text x="15" y="40" class="text-body">20 Murtala Mohammed Way, Sharada Kano</text>
+      <text x="15" y="56" class="text-body">info@kanochambers.com</text>
+      <text x="15" y="72" class="text-body">(234) 8069 444420</text>
+      <circle cx="40" cy="100" r="12" fill="#94a3b8" />
+      <circle cx="40" cy="100" r="6" fill="#e2e8f0" />
+      <polygon points="38,97 44,100 38,103" fill="#94a3b8" />
+      <circle cx="75" cy="100" r="12" fill="#94a3b8" />
+      <text x="75" y="104" font-family="sans-serif" font-size="13" font-weight="bold" fill="#e2e8f0" text-anchor="middle">𝕏</text>
+      <circle cx="110" cy="100" r="12" fill="#94a3b8" />
+      <text x="110" y="103" font-family="sans-serif" font-size="12" font-weight="bold" fill="#e2e8f0" text-anchor="middle">in</text>
+      <text x="15" y="132" class="text-muted">WDD231 Class Project</text>
+      <text x="15" y="148" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#172A3A">Kevin Cross Minchakpu</text>
+      <text x="15" y="164" font-family="'Segoe UI', sans-serif" font-size="11" fill="#64748b">© 2026 Kano Chambers | Mod: 2026-06-29</text>
+    </g>
+  </g>
+</svg>

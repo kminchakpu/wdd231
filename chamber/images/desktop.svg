@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" width="100%" height="100%">
+  <!-- Definitions for Reusable Elements and Styles -->
+  <defs>
+    <style>
+      .bg-main { fill: #f8f9fa; }
+      .bg-card { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1; }
+      .bg-wireframe { fill: #e2e8f0; stroke: #94a3b8; stroke-width: 1; }
+      .text-primary { font-family: 'Play', 'Segoe UI', sans-serif; font-size: 16px; fill: #172A3A; font-weight: bold; }
+      .text-body { font-family: 'Segoe UI', sans-serif; font-size: 14px; fill: #475569; }
+      .text-muted { font-family: 'Segoe UI', sans-serif; font-size: 13px; fill: #64748b; }
+      .text-header-title { font-family: 'Play', sans-serif; font-size: 24px; fill: #172A3A; font-weight: bold; }
+      .text-header-nav { font-family: 'Segoe UI', sans-serif; font-size: 15px; fill: #172A3A; font-weight: 600; }
+      .bar-label { fill: #475569; }
+      .bar-text { font-family: 'Play', sans-serif; font-size: 14px; fill: #ffffff; font-weight: bold; }
+      .cross-line { stroke: #94a3b8; stroke-width: 1; stroke-dasharray: 4 4; }
+      .btn-bg { fill: #cbd5e1; stroke: #94a3b8; stroke-width: 1; rx: 4; }
+      .btn-text { font-family: 'Segoe UI', sans-serif; font-size: 12px; fill: #172A3A; font-weight: bold; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="860" class="bg-main" />
+
+  <!-- ==================== HEADER ZONE ==================== -->
+  <g id="header-zone">
+    <rect x="20" y="20" width="1160" height="70" class="bg-wireframe" />
+    <!-- Image Icon Placeholder -->
+    <rect x="40" y="38" width="34" height="34" fill="none" stroke="#94a3b8" stroke-width="1.5" />
+    <polygon points="40,64 52,50 60,58 68,46 74,64" fill="none" stroke="#94a3b8" stroke-width="1.5" />
+    <circle cx="64" cy="46" r="3" fill="none" stroke="#94a3b8" stroke-width="1.5" />
+    
+    <text x="85" y="62" class="text-header-title">Kano Chamber of Commerce</text>
+    
+    <!-- Navigation Links -->
+    <text x="840" y="60" class="text-header-nav">Home</text>
+    <text x="910" y="60" class="text-header-nav">Directory</text>
+    <text x="1000" y="60" class="text-header-nav">Join</text>
+    <text x="1060" y="60" class="text-header-nav">Discover</text>
+    
+    <!-- Dark Mode Toggle Representation -->
+    <circle cx="1150" cy="54" r="10" fill="none" stroke="#172A3A" stroke-width="2" />
+    <path d="M 1150,44 A 10,10 0 0,1 1150,64 Z" fill="#172A3A" />
+  </g>
+
+  <!-- ==================== HERO ZONE ==================== -->
+  <g id="hero-zone">
+    <rect x="20" y="105" width="1160" height="260" class="bg-wireframe" />
+    <!-- Crossing Lines for Placeholder Identification -->
+    <line x1="20" y1="105" x2="1180" y2="365" class="cross-line" />
+    <line x1="20" y1="365" x2="1180" y2="105" class="cross-line" />
+    
+    <!-- Tag Label -->
+    <rect x="480" y="220" width="240" height="30" fill="#ffffff" stroke="#94a3b8" rx="2" />
+    <text x="600" y="240" class="text-body" text-anchor="middle">scalable, responsive hero image</text>
+    
+    <!-- Keynote Button -->
+    <rect x="1010" y="315" width="140" height="34" class="btn-bg" />
+    <text x="1080" y="336" class="btn-text">Keynote Tickets</text>
+  </g>
+
+  <!-- Page Indicator Label -->
+  <text x="20" y="405" font-family="'Play', sans-serif" font-size="28" font-weight="bold" fill="#172A3A">Home</text>
+
+  <!-- ==================== CORE CONTENT MIDDLE TIERS ==================== -->
+  
+  <!-- Left Box: Events Section -->
+  <g id="events-card">
+    <rect x="20" y="425" width="560" height="230" class="bg-card" />
+    <rect x="20" y="425" width="560" height="32" class="bar-label" />
+    <text x="32" y="446" class="bar-text">Events</text>
+    <rect x="35" y="475" width="530" height="160" fill="#f1f5f9" stroke="#e2e8f0" />
+  </g>
+
+  <!-- Center Box: Current Weather Section -->
+  <g id="current-weather-card">
+    <rect x="600" y="425" width="270" height="230" class="bg-card" />
+    <rect x="600" y="425" width="270" height="32" class="bar-label" />
+    <text x="612" y="446" class="bar-text">Current Weather</text>
+    
+    <!-- Weather Visual Icon Mock -->
+    <circle cx="650" cy="500" r="18" fill="none" stroke="#94a3b8" stroke-width="2" />
+    <path d="M 640,515 C 640,505 670,500 675,510 C 685,510 685,525 670,525 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5" />
+    
+    <text x="700" y="505" font-family="'Play', sans-serif" font-size="22" font-weight="bold" fill="#172A3A">75° F</text>
+    <text x="700" y="525" class="text-body" font-weight="600">Party Cloudy</text>
+    
+    <text x="620" y="560" class="text-body">High: 85°</text>
+    <text x="620" y="580" class="text-body">Low: 52°</text>
+    <text x="620" y="600" class="text-body">Humidity: 34%</text>
+    <text x="620" y="620" class="text-muted">Sunrise: 7:30am</text>
+    <text x="620" y="640" class="text-muted">Sunset: 9:59pm</text>
+  </g>
+
+  <!-- Right Box: Weather Forecast Section -->
+  <g id="weather-forecast-card">
+    <rect x="890" y="425" width="290" height="230" class="bg-card" />
+    <rect x="890" y="425" width="290" height="32" class="bar-label" />
+    <text x="902" y="446" class="bar-text">Weather Forecast</text>
+    
+    <text x="910" y="485" class="text-body">Today: <tspan font-weight="bold" fill="#172A3A">90°F</tspan></text>
+    <line x1="910" y1="505" x2="1160" y2="505" stroke="#e2e8f0" />
+    
+    <text x="910" y="540" class="text-body">Wednesday: <tspan font-weight="bold" fill="#172A3A">89°F</tspan></text>
+    <line x1="910" y1="560" x2="1160" y2="560" stroke="#e2e8f0" />
+    
+    <text x="910" y="595" class="text-body">Thursday: <tspan font-weight="bold" fill="#172A3A">68°F</tspan></text>
+  </g>
+
+  <!-- ==================== THREE COLUMN BUSINESS SPOTLIGHT ARRAY ==================== -->
+  
+  <!-- Business Spotlight Item 1 -->
+  <g id="spotlight-card-1" transform="translate(20, 675)">
+    <rect x="0" y="0" width="366" height="110" class="bg-card" rx="6" />
+    <text x="183" y="24" class="text-primary" text-anchor="middle">Business Name</text>
+    <text x="183" y="40" class="text-muted" text-anchor="middle" font-style="italic">Business Tag Line</text>
+    <line x1="15" y1="48" x2="351" y2="48" stroke="#cbd5e1" />
+    
+    <!-- Image placeholder -->
+    <rect x="15" y="56" width="65" height="44" class="bg-wireframe" />
+    <line x1="15" y1="56" x2="80" y2="100" class="cross-line" />
+    <line x1="15" y1="100" x2="80" y2="56" class="cross-line" />
+    
+    <!-- Meta fields -->
+    <text x="95" y="68" class="text-muted" font-weight="bold">EMAIL: <tspan class="text-body" font-weight="normal">info@gmail.com</tspan></text>
+    <text x="95" y="84" class="text-muted" font-weight="bold">PHONE: <tspan class="text-body" font-weight="normal">800-555-1234</tspan></text>
+    <text x="95" y="100" class="text-muted" font-weight="bold">URL: <tspan class="text-body" font-weight="normal">mybusiness.com</tspan></text>
+  </g>
+
+  <!-- Business Spotlight Item 2 -->
+  <g id="spotlight-card-2" transform="translate(416, 675)">
+    <rect x="0" y="0" width="366" height="110" class="bg-card" rx="6" />
+    <text x="183" y="24" class="text-primary" text-anchor="middle">Business Name</text>
+    <text x="183" y="40" class="text-muted" text-anchor="middle" font-style="italic">Business Tag Line</text>
+    <line x1="15" y1="48" x2="351" y2="48" stroke="#cbd5e1" />
+    
+    <!-- Image placeholder -->
+    <rect x="15" y="56" width="65" height="44" class="bg-wireframe" />
+    <line x1="15" y1="56" x2="80" y2="100" class="cross-line" />
+    <line x1="15" y1="100" x2="80" y2="56" class="cross-line" />
+    
+    <!-- Meta fields -->
+    <text x="95" y="68" class="text-muted" font-weight="bold">EMAIL: <tspan class="text-body" font-weight="normal">info@gmail.com</tspan></text>
+    <text x="95" y="84" class="text-muted" font-weight="bold">PHONE: <tspan class="text-body" font-weight="normal">800-555-1234</tspan></text>
+    <text x="95" y="100" class="text-muted" font-weight="bold">URL: <tspan class="text-body" font-weight="normal">mybusiness.com</tspan></text>
+  </g>
+
+  <!-- Business Spotlight Item 3 -->
+  <g id="spotlight-card-3" transform="translate(814, 675)">
+    <rect x="0" y="0" width="366" height="110" class="bg-card" rx="6" />
+    <text x="183" y="24" class="text-primary" text-anchor="middle">Business Name</text>
+    <text x="183" y="40" class="text-muted" text-anchor="middle" font-style="italic">Business Tag Line</text>
+    <line x1="15" y1="48" x2="351" y2="48" stroke="#cbd5e1" />
+    
+    <!-- Image placeholder -->
+    <rect x="15" y="56" width="65" height="44" class="bg-wireframe" />
+    <line x1="15" y1="56" x2="80" y2="100" class="cross-line" />
+    <line x1="15" y1="100" x2="80" y2="56" class="cross-line" />
+    
+    <!-- Meta fields -->
+    <text x="95" y="68" class="text-muted" font-weight="bold">EMAIL: <tspan class="text-body" font-weight="normal">info@gmail.com</tspan></text>
+    <text x="95" y="84" class="text-muted" font-weight="bold">PHONE: <tspan class="text-body" font-weight="normal">800-555-1234</tspan></text>
+    <text x="95" y="100" class="text-muted" font-weight="bold">URL: <tspan class="text-body" font-weight="normal">mybusiness.com</tspan></text>
+  </g>
+
+  <!-- ==================== FOOTER ZONE ==================== -->
+  <g id="footer-zone" transform="translate(20, 800)">
+    <rect x="0" y="0" width="1160" height="45" fill="#e2e8f0" stroke="#cbd5e1" />
+    
+    <!-- Left Column: Business Institutional Info -->
+    <text x="15" y="18" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#172A3A">Kano Chamber of Commerce</text>
+    <text x="15" y="34" font-family="'Segoe UI', sans-serif" font-size="11" fill="#475569">20 Murtala Mohammed Way, Sharada Kano | info@kanochambers.com | (234) 8069 444420</text>
+    
+    <!-- Middle Column: Social Icon Representation -->
+    <circle cx="560" cy="22" r="11" fill="#94a3b8" />
+    <circle cx="560" cy="22" r="6" fill="#e2e8f0" />
+    <polygon points="558,19 564,22 558,25" fill="#94a3b8" />
+    
+    <circle cx="590" cy="22" r="11" fill="#94a3b8" />
+    <text x="590" y="26" font-family="sans-serif" font-size="12" font-weight="bold" fill="#e2e8f0" text-anchor="middle">𝕏</text>
+    
+    <circle cx="620" cy="22" r="11" fill="#94a3b8" />
+    <text x="620" y="25" font-family="sans-serif" font-size="11" font-weight="bold" fill="#e2e8f0" text-anchor="middle">in</text>
+
+    <!-- Right Column: Developer Attributes & Revision Metrics -->
+    <text x="1145" y="16" font-family="'Segoe UI', sans-serif" font-size="11" fill="#475569" text-anchor="end">WDD231 Class Project</text>
+    <text x="1145" y="28" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#172A3A" text-anchor="end">Kevin Cross Minchakpu</text>
+    <text x="1145" y="40" font-family="'Segoe UI', sans-serif" font-size="10" fill="#64748b" text-anchor="end">© 2026 Kano Chambers | Last Modification: 2026-06-29</text>
+  </g>
+</svg>
