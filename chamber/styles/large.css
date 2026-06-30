@@ -21,10 +21,12 @@
         border-radius: var(--radius);
     }
 
-    .directory-controls {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 1rem 2rem;
+   .directory-controls {
+        flex-direction: column;   
+        justify-content: center;  
+        align-items: center;      
+        gap: 1rem;                
+        padding: 1.5rem 2rem;
     }
 
     

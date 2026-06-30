@@ -145,7 +145,7 @@ header {
 .grid-view section.level-3 { border-top-color: var(--sunflower); } 
 
 .grid-view section img {
-    max-width: 120px;
+    max-width: 220px;
     height: auto;
     margin-bottom: 1rem;
 }
