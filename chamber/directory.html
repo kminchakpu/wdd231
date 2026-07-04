@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Directory</title>
+    <meta name="description" content="Business Directory page for the Chamber of Commerce showcasing local businesses and services.">
+    <meta name="author" content="Kevin Cross Minchakpu">
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!--Meta Graph-->
+    <meta property="og:title" content="Chamber of Commerce Business Directory">
+    <meta property="og:description" content="Discover and connect with top local businesses in our Chamber Directory.">
+    <meta property="og:image" content="https://kevinminchakpu.github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://kevinminchakpu.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+
+    <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.svg" alt="Chamber Logo" class="logo">
+            <h1>Kano Chamber of Commerce</h1>
+        </div>
+        <button type="button" id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+         <h1 class="dirheader">Business Directory</h1>
+        <section class="directory-controls">
+           <div class="toggle-buttons">
+                <button type="button" id="grid-view-btn" class="active" aria-label="Grid View">Grid View ⊞</button>
+                <button type="button" id="list-view-btn" aria-label="List View">List View ⊟</button>
+            </div>
+        </section>
+
+        <article id="directory-container" class="grid-view"></article>
+    </main>
+
+<footer>
+    <div class="footer-contact">
+        <p><strong>Kano Chamber of Commerce</strong></p>
+        <p>20 Murtal Mohammed Way</p>
+        <p>Sharada Industral District, Kano</p>
+        <p>info@kanochamber.org</p>
+        <p>(234) 806-944-4420</p>
+    </div>
+
+    <div class="footer-socials">
+        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+            <img src="images/facebook.webp" alt="Facebook Icon">
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+            <img src="images/youtube.webp" alt="YouTube Icon">
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <img src="images/linkedin.webp" alt="LinkedIn Icon">
+        </a>
+    </div>
+
+    <div class="footer-dev">
+        <p>WDD231 Class Project</p>
+        <p>Kevin Cross Minchakpu</p>
+        <p>&copy; <span id="current-year"></span> Kano Chamber of Commerce</p>
+        <p id="last-modified"></p>
+    </div>
+</footer>
+</body>
+</html>

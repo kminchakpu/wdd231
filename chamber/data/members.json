@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Kano Tech Innovation Hub",
+    "address": "Block D, BUK Road, Nassarawa, Kano",
+    "phone": "+234 803 111 2222",
+    "website": "https://example.com/kanotech",
+    "image": "images/kanotech.webp",
+    "membershipLevel": 3,
+    "tagline": "Driving digital transformation across northern Nigeria."
+  },
+  {
+    "name": "Dala Hills Tourism Co.",
+    "address": "12 Dala Hill Avenue, Old City, Kano",
+    "phone": "+234 805 333 4444",
+    "website": "https://example.com/dalatour",
+    "image": "images/dalla.webp",
+    "membershipLevel": 2,
+    "tagline": "Explore the ancient heritage and living history of Kano."
+  },
+  {
+    "name": "Kofar Wanbai Textile Traders",
+    "address": "Kofar Wanbai Market, Line 4, Kano",
+    "phone": "+234 809 555 6666",
+    "website": "https://example.com/wanbaitextiles",
+    "image": "images/wambai.webp",
+    "membershipLevel": 1,
+    "tagline": "Premium traditional prints and quality fabrics."
+  },
+  {
+    "name": "Pyramid City Builders",
+    "address": "45 Murtala Mohammed Way, Kano",
+    "phone": "+234 812 777 8888",
+    "website": "https://example.com/pyramidbuilders",
+    "image": "images/pyramid.webp",
+    "membershipLevel": 3,
+    "tagline": "Constructing modern spaces inspired by ancient heritage."
+  },
+  {
+    "name": "Kantari Logistics & Freight",
+    "address": "Challawa Industrial Estate, Phase 2, Kano",
+    "phone": "+234 802 999 0000",
+    "website": "https://example.com/kantarilogistics",
+    "image": "images/kantari.webp",
+    "membershipLevel": 2,
+    "tagline": "Seamless supply chain solutions across West Africa."
+  },
+  {
+    "name": "Sahel Eco Energy",
+    "address": "88 Zoo Road, Kano",
+    "phone": "+234 701 123 4567",
+    "website": "https://example.com/saheleco",
+    "image": "images/sahel.webp",
+    "membershipLevel": 1,
+    "tagline": "Bringing sustainable and affordable solar energy to the Sahel."
+  },
+  {
+    "name": "Tiga View Cafe",
+    "address": "Ado Bayero Mall, Ground Floor, Kano",
+    "phone": "+234 908 765 4321",
+    "website": "https://example.com/tigaview",
+    "image": "images/tiga.webp",
+    "membershipLevel": 3,
+    "tagline": "Rich blends, fresh pastries, and fine corporate hosting."
+  },
+  {
+    "name": "Kurmi Craft & Media",
+    "address": "Kurmi Market Centre, Kano",
+    "phone": "+234 806 245 7891",
+    "website": "https://example.com/kurmicrafts",
+    "image": "images/kurmi.webp",
+    "membershipLevel": 1,
+    "tagline": "Preserving traditional leatherworks and cultural design."
+  },
+  {
+    "name": "Fagge Legal Chambers",
+    "address": "14 IBB Way, Fagge, Kano",
+    "phone": "+234 64 461 2345",
+    "website": "https://example.com/faggelegal",
+    "image": "images/fegge.webp",
+    "membershipLevel": 2,
+    "tagline": "Expert corporate, commercial, and arbitration counsel."
+  },
+  {
+    "name": "Central Ground Hospitality",
+    "address": "52 Zaria Road, Kano",
+    "phone": "+234 810 555 0192",
+    "website": "https://example.com/centralground",
+    "image": "images/central.webp",
+    "membershipLevel": 3,
+    "tagline": "Premium luxury and world-class dynamic event spaces."
+  },
+  {
+    "name": "Nassarawa Wellness Clinic",
+    "address": "31 Lamido Road, Nassarawa GRA, Kano",
+    "phone": "+234 703 987 6543",
+    "website": "https://example.com/nassarawawellness",
+    "image": "images/nasarawa.webp",
+    "membershipLevel": 2,
+    "tagline": "Dedicated community healthcare and advanced diagnostic imaging."
+  },
+  {
+    "name": "Challawa Agro Processing",
+    "address": "Plot 110, Challawa Industrial Area, Kano",
+    "phone": "+234 804 321 0987",
+    "website": "https://example.com/challawaagro",
+    "image": "images/challawa.webp",
+    "membershipLevel": 1,
+    "tagline": "Processing groundnuts and local grains for a global market."
+  }
+]

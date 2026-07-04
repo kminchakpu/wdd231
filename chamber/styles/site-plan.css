@@ -1,0 +1,226 @@
+/* --- CSS Custom Properties (:root) --- */
+:root {
+    --primary-color: #172A3A;         
+    --secondary-color: #E6F14A;      
+    --background-color: #f8f9fa;      
+    --text-color: #212529;            
+    --white: #ffffff;
+    --gray-light: #f1f3f5;
+    --gray-border: #e9ecef;
+    --wireframe-bg: #e2e8f0;
+    --wireframe-border: #94a3b8;
+}
+
+/* --- Base Reset and Setup --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Play', 'Pliant', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 0;
+}
+
+/* --- Header Styling --- */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2.5rem 1rem;
+    text-align: center;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+header h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.developer-info {
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+}
+
+/* --- Layout Framework --- */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* --- Card Section Styles --- */
+.card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-left: 4px solid var(--primary-color);
+}
+
+.card h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    border-bottom: 1px solid var(--gray-border);
+    padding-bottom: 0.5rem;
+}
+
+.sub-section {
+    margin-top: 1.5rem;
+}
+
+.sub-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style-position: inside;
+    margin-left: 0.5rem;
+}
+
+li {
+    margin-bottom: 0.8rem;
+}
+
+/* --- Sitemap Layout Grid --- */
+.sitemap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.sitemap-item {
+    background-color: var(--gray-light);
+    padding: 1rem;
+    border-radius: 6px;
+    border-top: 3px solid var(--secondary-color);
+    font-size: 0.95rem;
+}
+
+/* --- Design Specification Table --- */
+.design-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.design-table th, .design-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--gray-border);
+}
+
+.design-table th {
+    background-color: var(--gray-light);
+    color: var(--primary-color);
+}
+
+.color-preview {
+    width: 60px;
+    height: 25px;
+    border-radius: 4px;
+}
+
+/* --- Wireframe Presentation System --- */
+.wireframe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.wireframe-view {
+    border: 2px dashed var(--wireframe-border);
+    padding: 1.5rem;
+    background-color: #f8fafc;
+    border-radius: 6px;
+}
+
+.wireframe-view h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.wireframe-element {
+    background-color: var(--wireframe-bg);
+    border: 1px solid var(--wireframe-border);
+    color: #475569;
+    padding: 0.75rem;
+    text-align: center;
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+/* Desktop Grid Blueprint Layer */
+.desktop-grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.desktop-grid-layout .wireframe-element {
+    margin-bottom: 0;
+}
+
+.wf-spotlight-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* --- Footer Element Styling --- */
+footer {
+    background-color: var(--primary-color);
+    color: #ced4da;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    border-top: 4px solid var(--secondary-color);
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+/* --- Responsive Media Queries --- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .card {
+        padding: 1.25rem;
+    }
+    
+    .design-table th, .design-table td {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    
+    .desktop-grid-layout {
+        grid-template-columns: 1fr;
+    }
+}
