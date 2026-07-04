@@ -6,9 +6,10 @@
         padding: 1.5rem 2rem;
     }
 
-    .logo-area h1 {
+    .logo-area p {
     font-size: 1.5rem; 
     margin: 0;
+    font-family: var(--heading-font);
     }
 
     .logo-area img {
