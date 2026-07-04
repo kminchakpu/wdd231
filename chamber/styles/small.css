@@ -93,8 +93,8 @@ header {
 }
 
 #primary-nav a.active, #primary-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-    color: var(--sunflower); 
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--sunflower);
 }
 
 .dirheader {
