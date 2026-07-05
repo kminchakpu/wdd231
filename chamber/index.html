@@ -27,6 +27,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -37,27 +39,67 @@
         <button type="button" id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
         <nav id="primary-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-         <h1 class="dirheader">Business Directory</h1>
-        <section class="directory-controls">
-           <div class="toggle-buttons">
-                <button type="button" id="grid-view-btn" class="active" aria-label="Grid View">Grid View ⊞</button>
-                <button type="button" id="list-view-btn" aria-label="List View">List View ⊟</button>
+    <!-- Main content -->
+     <main>
+    <section class="hero-container">
+        <picture>
+            <source media="(min-width: 960px)" srcset="images/hero-large.webp">
+            <source media="(min-width: 600px)" srcset="images/hero-medium.webp">
+            <img src="images/hausa-family.jpg" alt="A Hausa family in traditional attire" class="hero-image" loading="eager">
+        </picture>
+        <div class="hero-cta-overlay">
+            <a href="join.html" class="cta-button">Join the Chamber</a>
+        </div>
+    </section>
+
+    <div class="info-grid">
+        <section class="card events-card">
+            <h3>Upcoming Events</h3>
+            <div class="event-item">
+                <h4>Kano Trade Fair 2026</h4>
+                <p>Join us next Monday for the annual tech and trade exhibition showcasing local innovations.</p>
             </div>
         </section>
 
-        <article id="directory-container" class="grid-view"></article>
-    </main>
+        <section class="card weather-card">
+            <h3>Current Weather</h3>
+            <div id="current-weather-content">
+                <div class="weather-main">
+                    <img id="weather-icon" src="" alt="">
+                    <span id="current-temp">--°C</span>
+                </div>
+                <p id="weather-desc">Loading weather...</p>
+                <div class="weather-details">
+                    <p>Humidity: <span id="humidity">--</span>%</p>
+                </div>
+            </div>
+        </section>
 
-<footer>
+        <section class="card forecast-card">
+            <h3>Weather Forecast</h3>
+            <ul id="forecast-list">
+                <li>Loading 3-day forecast...</li>
+            </ul>
+        </section>
+    </div>
+
+    <section class="spotlight-section">
+        <h3>Business Spotlights</h3>
+        <div id="spotlight-container" class="spotlight-grid">
+            </div>
+    </section>
+</main>
+
+<!-- Footer -->
+ <footer>
     <div class="footer-contact">
         <p><strong>Kano Chamber of Commerce</strong></p>
         <p>20 Murtal Mohammed Way</p>

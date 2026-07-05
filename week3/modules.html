@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management | Modules Activity</title>
+    <link rel="stylesheet" href="styles/modules.css">
+    <script type="module" src="scripts/modules.mjs"></script>
+</head>
+<body>
+    <main class="card-container">
+        <h1 id="courseName">Course Name</h1>
+        <h2 id="courseCode">Course Code</h2>
+        
+        <section class="controls-box">
+            <div class="selection-row">
+                <label for="sectionNumber">Choose a section:</label>
+                <select id="sectionNumber">
+                    </select>
+            </div>
+            <button id="enrollStudent">Enroll a Student</button>
+            <button id="dropStudent">Drop a Student</button>
+        </section>
+
+        <section class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Section</th>
+                        <th>Enrolled</th>
+                        <th>Instructor</th>
+                    </tr>
+                </thead>
+                <tbody id="sections">
+                    </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

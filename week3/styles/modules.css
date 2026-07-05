@@ -1,0 +1,115 @@
+:root {
+    --bg-page: #3D3B30;
+    --bg-card: #222E50;
+    --bg-controls: #EFE9F4; 
+    --btn-blue: #0074d9;
+    --text-dark: #000000;
+    --golden-pollen: #FFD166;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-page);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+}
+
+.card-container {
+    background-color: var(--bg-card);
+    width: 100%;
+    max-width: 480px;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    border: 1px solid #dcdcdc;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: bold;
+    color: var(--golden-pollen);
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin: 0 0 1.5rem 0;
+    font-weight: bold;
+    color: #F2F2F2;
+}
+
+.controls-box {
+    background-color: var(--bg-controls);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.selection-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+select {
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+}
+
+.controls-box button {
+    background-color: var(--btn-blue);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    width: 200px;
+    cursor: pointer;
+}
+
+.controls-box button:hover {
+    filter: brightness(0.9);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: var(--text-dark);
+    color: white;
+    padding: 0.75rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e0e0e0;
+    color: #F2F2F2;
+    font-size: 1.05rem;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Column alignment matching the image */
+th:nth-child(1), td:nth-child(1) { text-align: center; width: 25%; }
+th:nth-child(2), td:nth-child(2) { text-align: center; width: 25%; }
+th:nth-child(3), td:nth-child(3) { text-align: center; width: 50%; }

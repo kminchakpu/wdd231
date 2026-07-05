@@ -273,3 +273,170 @@ footer p {
     opacity: 1;
 }
 
+/* Home Page */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    color: var(--text-color);
+    font-family: var(--nav-font);
+}
+
+/* Hero Elements */
+.hero-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 16 / 7;
+    object-fit: cover;
+}
+
+.hero-cta-overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Card Foundations */
+.card {
+    background: var(--white);
+    border: 1px solid var(--gray-border);
+    border-radius: var(--radius);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card h3, .spotlight-section h3 {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: var(--white);
+    margin: 0;
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+}
+
+.card p, .card div, .card ul {
+    padding: 1rem;
+}
+
+/* Info Layouts */
+.event-item h4 {
+    margin: 0 0 0.5rem 0;
+    color: var(--primary-color);
+}
+
+.weather-main {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--midnight-violet);
+}
+
+.weather-main img {
+    width: 50px;
+    height: 50px;
+}
+
+#forecast-list {
+    list-style: none;
+    margin: 0;
+}
+
+#forecast-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--gray-border);
+}
+
+#forecast-list li:last-child {
+    border-bottom: none;
+}
+
+/* Spotlight Configurations */
+.spotlight-section {
+    background: var(--white);
+    border: 1px solid var(--gray-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.spotlight-card {
+    border: 1px solid var(--gray-border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    text-align: center;
+    background: var(--gray-light);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.spotlight-card img {
+    max-height: 90px;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+
+.spotlight-card h4 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.spotlight-tagline {
+    font-style: italic;
+    color: #555555;
+    margin-bottom: 0.75rem;
+}
+
+.spotlight-card p {
+    padding: 0.25rem 0;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.spotlight-card a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.spotlight-card a:hover {
+    color: var(--sunflower);
+}

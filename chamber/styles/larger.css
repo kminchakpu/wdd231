@@ -89,4 +89,22 @@
         justify-self: end;
         text-align: right;
     }
+
+    /* Homepage */
+    .info-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .card {
+        margin-bottom: 0;
+    }
+
+    .spotlight-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
 }
