@@ -463,7 +463,7 @@ main {
     object-fit: contain;
 }
 
-.spotlight-card h4 {
+.spotlight-card h2 {
     margin: 0 0 0.25rem 0;
     font-size: 1.3rem;
     color: var(--primary-color);
