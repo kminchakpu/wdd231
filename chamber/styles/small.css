@@ -341,7 +341,9 @@ main {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.card h1, .spotlight-section h1 {
+.card h1, .weather-card h2, 
+.forecast-card h2, 
+.spotlight-section h2 {
     font-family: var(--heading-font);
     background-color: var(--primary-color);
     color: var(--white);
