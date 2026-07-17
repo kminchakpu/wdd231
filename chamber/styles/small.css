@@ -14,13 +14,19 @@
     --radius: 4px;
 } 
 
+*,
+*::before,
+*::after {
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 body {
     font-family: Arial, sans-serif; 
-    margin: 0;
-    padding: 0;
     color: var(--text-color);
     background-color: var(--background-color);
-    min-width: 320px; 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,10 +47,11 @@ header {
 }
 
 .logo-area {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    max-width: 75%;
+    display:flex;
+    align-items:center;
+    gap:.5rem;
+    flex:1;
+    min-width:0;
 }
 
 .logo-area img {
@@ -53,19 +60,28 @@ header {
 
 
 .logo-area p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.2;
     margin: 0;
     font-weight: bold;
     font-family: var(--heading-font);
+    overflow-wrap:anywhere;
 }
 
 #menu-toggle {
+    flex-shrink:0;
     background: none;
     border: none;
     color: var(--white);
     font-size: 2rem;
     cursor: pointer;
     margin-top: 0;            
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 #primary-nav {
@@ -281,7 +297,20 @@ footer p {
 
 /* Home Page */
 
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; 
+}
+
+.card, .spotlight-section, .hero-container {
+    width: 100%;
+    max-width: 100%;
+}
+
 main {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
@@ -309,8 +338,8 @@ main {
 
 .hero-cta-overlay {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
     z-index: 10;
 }
 
@@ -343,13 +372,17 @@ main {
 
 .card h1, .weather-card h2, 
 .forecast-card h2, 
-.spotlight-section h2 {
+.spotlight-section h2,
+main h2 { 
     font-family: var(--heading-font);
     background-color: var(--primary-color);
     color: var(--white);
     margin: 0;
     padding: 0.75rem 1rem;
-    font-size: 1.2rem;
+    font-size: 1.15rem; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 .card p, .card div, .card ul {
@@ -357,7 +390,7 @@ main {
 }
 
 /* Info Layouts */
-.event-item h4 {
+.event-item h2 {
     margin: 0 0 0.5rem 0;
     color: var(--primary-color);
 }
@@ -365,6 +398,12 @@ main {
 .weather-main img {
     width: 50px;
     height: 50px;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1.5rem;
 }
 
 .weather-icon {
@@ -454,6 +493,8 @@ main {
     max-height: 90px;
     margin-bottom: 1rem;
     object-fit: contain;
+    align-self: center;
+    
 }
 
 .spotlight-card h2 {

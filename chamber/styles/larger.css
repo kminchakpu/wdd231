@@ -109,3 +109,15 @@
     }
 }
 
+@media (max-width: 360px) {
+    .hero-cta-overlay {
+        right: 50%;
+        transform: translateX(50%); 
+        bottom: 8px;
+    }
+    
+    .cta-button {
+        padding: 0.5rem 1rem; 
+        font-size: 0.85rem;
+    }
+}
