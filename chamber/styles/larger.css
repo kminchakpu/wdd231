@@ -132,3 +132,24 @@
         font-size: 0.85rem;
     }
 }
+
+
+/* Responsive alignment  */
+@media (min-width: 480px) {
+    .receipt-row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .receipt-label {
+        text-align: left;
+        min-width: 160px;
+    }
+
+    .receipt-value {
+        text-align: right;
+        margin-top: 0;
+    }
+}
