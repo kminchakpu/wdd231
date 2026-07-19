@@ -51,3 +51,22 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// Dynamic date updates inside the Footer elements
+document.getElementById('current-year').textContent = new Date().getFullYear();
+document.getElementById('last-modified').textContent = `Last Modified: ${document.lastModified}`;
+
+// Simple Hamburger Menu Toggle for Responsive Layouts
+const menuToggle = document.querySelector('#menu-toggle');
+const primaryNav = document.querySelector('#primary-nav');
+
+menuToggle.addEventListener('click', () => {
+    primaryNav.classList.toggle('open');
+    
+    // Check if the menu is open and swap the icon
+    if (primaryNav.classList.contains('open')) {
+        menuToggle.innerHTML = '&times;'; 
+    } else {
+        menuToggle.innerHTML = '&#9776;'; 
+    }
+});
