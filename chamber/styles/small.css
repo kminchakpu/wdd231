@@ -17,10 +17,9 @@
 *,
 *::before,
 *::after {
-     margin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -39,25 +38,24 @@ header {
     color: var(--white);
     padding: 1rem;
     display: flex;
-    flex-direction: row;       
-    flex-wrap: wrap;           
+    flex-direction: row;      
+    flex-wrap: wrap;          
     justify-content: space-between; 
     align-items: center;      
     position: relative;
 }
 
 .logo-area {
-    display:flex;
-    align-items:center;
-    gap:.5rem;
-    flex:1;
-    min-width:0;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    flex: 1;
+    min-width: 0;
 }
 
 .logo-area img {
     height: 40px;
 }
-
 
 .logo-area p {
     font-size: 1.1rem;
@@ -65,11 +63,11 @@ header {
     margin: 0;
     font-weight: bold;
     font-family: var(--heading-font);
-    overflow-wrap:anywhere;
+    overflow-wrap: anywhere;
 }
 
 #menu-toggle {
-    flex-shrink:0;
+    flex-shrink: 0;
     background: none;
     border: none;
     color: var(--white);
@@ -86,7 +84,7 @@ img {
 
 #primary-nav {
     font-family: var(--nav-font);
-    width: 100%;               
+    width: 100%;              
 }
 
 #primary-nav ul {
@@ -179,7 +177,7 @@ img {
 }
 
 .grid-view section.level-1 { border-top-color: var(--midnight-violet); }
-.grid-view section.level-2 { border-top-color: #c0c0c0; } 
+.grid-view section.level-2 { border-top-color: var(--gray-border); } 
 .grid-view section.level-3 { border-top-color: var(--sunflower); } 
 
 .grid-view section img {
@@ -206,7 +204,6 @@ img {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    min-height: 100px; 
     height: auto;
     margin-bottom: 0.5rem;
     background-color: var(--white);
@@ -240,7 +237,6 @@ img {
     letter-spacing: 0.5px;
 }
 
-
 .badge-lvl-1 {
     background-color: var(--midnight-violet);
     color: var(--white);
@@ -248,9 +244,9 @@ img {
 }
 
 .badge-lvl-2 {
-    background-color: #e2e8f0; 
-    color: #4a5568;
-    border: 1px solid #cbd5e1;
+    background-color: var(--gray-light); 
+    color: var(--text-color);
+    border: 1px solid var(--gray-border);
 }
 
 .badge-lvl-3 {
@@ -296,8 +292,6 @@ footer p {
 }
 
 /* Home Page */
-
-
 html, body {
     width: 100%;
     max-width: 100%;
@@ -390,11 +384,6 @@ main h2 {
 }
 
 /* Info Layouts */
-.event-item h2 {
-    margin: 0 0 0.5rem 0;
-    color: var(--primary-color);
-}
-
 .event-item h2,
 #events h2:not(:first-of-type) { 
     background-color: transparent; 
@@ -403,20 +392,16 @@ main h2 {
     margin: 0 0 0.5rem 0;          
 }
 
-.weather-main img {
+.weather-main img,
+.weather-icon {
     width: 50px;
     height: 50px;
 }
 
 .info-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:1.5rem;
-}
-
-.weather-icon {
-    width: 50px;
-    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
 
 #forecast-list {
@@ -433,7 +418,6 @@ main h2 {
     border-bottom: none;
 }
 
-
 #current-weather-content {
     padding: 1rem;
     display: flex;
@@ -449,7 +433,6 @@ main h2 {
     padding: 0;
     margin: 0;
 }
-
 
 .weather-main {
     display: flex;
@@ -501,7 +484,6 @@ main h2 {
     max-height: 90px;
     margin: 0 auto 1rem auto;
     object-fit: contain;
-    
 }
 
 .spotlight-card h2 {
@@ -533,7 +515,6 @@ main h2 {
 }
 
 /* --- Join Page Layout --- */
-
 .join-container {
     display: flex;
     flex-direction: column;
@@ -664,7 +645,6 @@ fieldset legend {
     animation: cardFlyInFromBottom 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
-/* Staggered load delays handled completely via external CSS */
 .membership-card:nth-of-type(1) { animation-delay: 100ms; }
 .membership-card:nth-of-type(2) { animation-delay: 150ms; }
 .membership-card:nth-of-type(3) { animation-delay: 200ms; }
@@ -675,7 +655,6 @@ fieldset legend {
     color: var(--primary-color);
 }
 
-/* Applying specific custom tokens to card accents */
 .membership-card.np-card { border-left-color: var(--midnight-violet); }
 .membership-card.bronze-card { border-left-color: var(--gray-border); }
 .membership-card.silver-card { border-left-color: var(--secondary-color); background-color: rgba(230, 241, 74, 0.05); }
@@ -701,7 +680,6 @@ fieldset legend {
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
 }
 
-/* Hover and Focus States */
 .open-modal-btn:hover,
 .open-modal-btn:focus {
     background-color: var(--midnight-violet);
@@ -709,12 +687,10 @@ fieldset legend {
     outline: none;
 }
 
-/* Click feedback interaction */
 .open-modal-btn:active {
     transform: scale(0.98);
 }
 
-/* Contextual variant balance for tier importance layout weight */
 .membership-card.silver-card .open-modal-btn {
     background-color: transparent;
     color: var(--primary-color);
@@ -737,7 +713,6 @@ fieldset legend {
 
 /* --- Accessible Dialog/Modal Styling --- */
 .membership-modal {
-    border: none;
     border-radius: var(--radius);
     padding: 0;
     max-width: 450px;
@@ -755,17 +730,12 @@ fieldset legend {
     transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
-/* 
-   Trigger state fallback animations handling backwards compatibility cleanly
-   across legacy Chrome, Safari, Firefox, and mobile engines.
-*/
 .membership-modal[open] {
     opacity: 1;
     transform: scale(1);
     animation: modalFadeIn 0.25s ease forwards;
 }
 
-/* Native backdrop overlay styling rules */
 .membership-modal::backdrop {
     background-color: rgba(23, 42, 58, 0);
     transition: background-color 0.25s ease;
@@ -776,7 +746,6 @@ fieldset legend {
     animation: backdropFadeIn 0.25s ease forwards;
 }
 
-/* Cross-browser explicit state transition animations */
 @keyframes modalFadeIn {
     from {
         opacity: 0;
@@ -830,4 +799,3 @@ fieldset legend {
     color: var(--white);
     margin: 0.5rem 0 1rem 0;
 }
-
