@@ -2,6 +2,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalButtons = document.querySelectorAll(".open-modal-btn");
     const closeButtons = document.querySelectorAll(".close-modal-btn");
     const modals = document.querySelectorAll(".membership-modal");
+    const joinForm = document.getElementById("membership-form");
+
+    // --- Force Timestamp on Form Submission ---
+    if (joinForm) {
+        joinForm.addEventListener("submit", () => {
+            const timestampInput = document.getElementById("form-timestamp");
+            if (timestampInput) {
+                // Captures the exact millisecond count right before redirecting
+                timestampInput.value = Date.now(); 
+            }
+        });
+    }
 
     // Open Modal Action
     modalButtons.forEach(button => {
