@@ -978,6 +978,7 @@ fieldset legend {
   color: var(--white);
   background-color: var(--primary-color);
   border-radius: var(--radius);
+  cursor: pointer;
   transition: background-color 0.2s;
 }
 
