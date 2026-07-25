@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce - Directory</title>
-    <meta name="description" content="Business Directory page for the Chamber of Commerce showcasing local businesses and services.">
+    <title>Chamber of Commerce - Discover Kano</title>
+    <meta name="description" content="Discover the sight and sound that makes the majesty of the ancient city of Kano">
     <meta name="author" content="Kevin Cross Minchakpu">
     
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <!--Meta Graph-->
-    <meta property="og:title" content="Chamber of Commerce Business Directory">
-    <meta property="og:description" content="Discover and connect with top local businesses in our Chamber Directory.">
+    <meta property="og:title" content="Chamber of Commerce - Join">
+    <meta property="og:description" content="Discover the sight and sound of the ancient city of Kano">
    <meta property="og:image" content="https://kminchakpu.github.io/wdd231/chamber/images/logo.svg">
-    <meta property="og:url" content="https://kminchakpu.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://kminchakpu.github.io/wdd231/chamber/discover.html">
     <meta property="og:type" content="website">
 
     <!--Stylesheets-->
@@ -26,9 +26,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
-    <script src="scripts/directory.js" defer></script>
+   <script src="scripts/discover.js" type="module"></script>
 </head>
 <body>
+    <!--Header-->
     <header>
         <div class="logo-area">
             <img src="images/logo.svg" alt="Chamber Logo" class="logo">
@@ -38,27 +39,23 @@
         <nav id="primary-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <!--Main-->
+        <main>
+        <div id="visitor-message" class="visitor-banner"></div>
+            <section class="discover-grid">
+                <h1 class="discover-title">Discover Kano City</h1>
+            </section>
+        </main>
 
-    <main>
-         <h1 class="dirheader">Business Directory</h1>
-        <section class="directory-controls">
-           <div class="toggle-buttons">
-                <button type="button" id="grid-view-btn" class="active" aria-label="Grid View">Grid View ⊞</button>
-                <button type="button" id="list-view-btn" aria-label="List View">List View ⊟</button>
-            </div>
-        </section>
-
-        <article id="directory-container" class="grid-view"></article>
-    </main>
-
-<footer>
+    <!--Footer-->
+    <footer>
     <div class="footer-contact">
         <p><strong>Kano Chamber of Commerce</strong></p>
         <p>20 Murtal Mohammed Way</p>

@@ -923,3 +923,75 @@ fieldset legend {
     transform: scale(0.98);
 }
 
+/* --- VISITOR & DISCOVER --- */
+.visitor-banner {
+  background-color: var(--placeholder-color);
+  padding: var(--padding-medium);
+  text-align: center;
+  margin-bottom: var(--padding-medium);
+  border: 1px solid var(--border-neutral);
+  font-weight: bold;
+}
+
+.discover-card {
+  border: 1px solid var(--border-neutral);
+  padding: 10px;
+  background: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius);
+}
+
+.discover-card figure {
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.discover-card img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.discover-card h2 {
+  margin-top: 0.5rem;
+}
+
+.discover-card address {
+  font-style: normal;
+  font-weight: bold;
+  color: var(--text-color);
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.discover-card button {
+  margin-top: auto;
+  padding: 10px;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: var(--radius);
+  transition: background-color 0.2s;
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+  gap: 20px;
+  padding: 20px;
+}

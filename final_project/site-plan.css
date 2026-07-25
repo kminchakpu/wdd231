@@ -1,0 +1,210 @@
+/* ===============================
+   TeachHub Site Plan Stylesheet
+  ============================= */
+
+:root {
+    --primary-color: #0F172A;      
+    --secondary-color: #fcb54a;    
+    --accent-color: #0EA5E9;      
+    --bg-light: #F8FAFC;           
+    --card-bg: #FFFFFF;            
+    --text-color: #334155;         
+    --border-color: #E2E8F0; 
+    --white: #ffffff;      
+    
+    --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'Fira Code', monospace;
+}
+
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-heading);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-light);
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.author-info {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #cbd5e1;
+}
+
+/* Card Sections */
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.card h3 {
+    color: var(--text-color);
+    margin: 1rem 0 0.5rem 0;
+}
+
+.card ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.card li {
+    margin-bottom: 0.5rem;
+}
+
+code {
+    font-family: var(--font-mono);
+    background-color: #f1f5f9;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    color: var(--secondary-color);
+}
+
+/* Color Scheme Section */
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.color-box {
+    padding: 1rem;
+    border-radius: 6px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 120px;
+}
+
+.color-name {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.color-hex {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.color-use {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    line-height: 1.3;
+}
+
+.primary { background-color: var(--primary-color); }
+.secondary { background-color: var(--secondary-color); }
+.accent { background-color: var(--accent-color); color: #000000; }
+.neutral-light { background-color: #e2e8f0; color: #0f172a; border: 1px solid #cbd5e1; }
+
+/* Typography Section */
+.typography-demo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.font-group {
+    background-color: var(--bg-light);
+    padding: 1rem;
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 4px;
+}
+
+.font-inter-demo {
+    font-family: var(--font-heading);
+    margin-top: 0.5rem;
+}
+
+.font-fira-demo {
+    font-family: var(--font-mono);
+    background: #1e293b;
+    color: #38bdf8;
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+/* Wireframe Section */
+.wireframe-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .wireframe-container {
+        grid-template-columns: 1fr 1.8fr;
+    }
+}
+
+.wireframe-box {
+    background-color: var(--bg-light);
+    border: 1px dashed var(--secondary-color);
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.wireframe-svg {
+    width: 100%;
+    height: auto;
+    max-height: 550px;
+    margin-top: 1rem;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--white);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 2rem;
+}
