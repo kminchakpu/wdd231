@@ -27,9 +27,9 @@ function buildCards() {
                     loading="lazy"
                 >
             </figure>
-
-            <address>${item.address}</address>
+       
             <p>${item.description}</p>
+            <address>${item.address}</address>
 
             <button>Learn More</button>
         `;
