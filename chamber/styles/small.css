@@ -925,21 +925,31 @@ fieldset legend {
 
 /* --- VISITOR & DISCOVER --- */
 .visitor-banner {
-  background-color: var(--placeholder-color);
-  padding: var(--padding-medium);
-  text-align: center;
-  margin-bottom: var(--padding-medium);
-  border: 1px solid var(--border-neutral);
-  font-weight: bold;
+    background: var(--gray-light);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--gray-border);
+    text-align: center;
+    font-weight: bold;
+    border-radius: var(--radius);
 }
 
 .discover-card {
-  border: 1px solid var(--border-neutral);
-  padding: 10px;
-  background: var(--background-color);
-  display: flex;
-  flex-direction: column;
-  border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: var(--white);
+    border: 1px solid var(--gray-border);
+    border-radius: var(--radius);
+    box-shadow: rgba(0,0,0,.12) 0 2px 6px;
+    overflow: hidden;
+}
+
+.discover-title {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
 }
 
 .discover-card figure {

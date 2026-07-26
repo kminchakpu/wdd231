@@ -155,6 +155,16 @@
 }
 
 @media (min-width: 1025px) {
+
+    .visitor-banner {
+    background: var(--gray-light);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--gray-border);
+    text-align: center;
+    font-weight: bold;
+    border-radius: var(--radius);
+}
     .discover-grid {
         display: grid;
         grid-template-columns: 1fr 1fr; 
@@ -163,7 +173,7 @@
             "card3 card4"
             "card5 card6"
             "card7 card8";
-        gap: 30px;
+        gap: 20px;
     }
 
     .discover-card {
