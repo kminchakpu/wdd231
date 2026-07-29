@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeachHub | Frontend Development Resource Portal</title>
+    <meta name="description" content="TeachHub is an open frontend web development resource portal containing tutorials, dynamic tools, and reference guides for students.">
+    <meta name="author" content="Kevin Cross Minchakpu">
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!--Meta Graph-->
+    <meta property="og:title" content="TechHub | Frontend Development Resource Portal ">
+    <meta property="og:description" content="TeachHub is an open frontend web development resource portal containing tutorials, dynamic tools, and reference guides for students.">
+   <meta property="og:image" content="https://kminchakpu.github.io/wdd231/final_project/images/logo.webp">
+    <meta property="og:url" content="https://kminchakpu.github.io/wdd231/.html">
+    <meta property="og:type" content="website">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+      <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+
+    <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    
+    <script type="module" src="scripts/main.js"></script>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <div class="logo-area">
+        <img src="images/logo.webp" alt="TeachHub Logo" class="logo">
+        <p>Teach<span>Hub</span></p>
+    </div>
+    <button type="button" id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    <nav id="primary-nav">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="toolkit.html">Student Toolkit</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main>
+<!-- Hero -->
+    <section class="hero">
+        <h2>Welcome to TeachHub</h2>
+        <p>Your one-stop portal for learning HTML, CSS and JavaScript.</p>
+    </section>
+
+    <!-- Home Grid-->
+    <section class="home-grid">
+        <!-- Tech Term -->
+       <div class="tech-term">
+          <h2>Tech Term of the Day</h2>
+            <div id="term-container">
+                <p>Loading term...</p>
+            </div>
+        </div>
+
+        <!-- Featured Resources -->
+        <div class="featured-resources">
+            <h2>Featured Learning Paths</h2>
+            <div id="featured-cards"></div>
+        </div>
+        <!-- Category Filters -->
+        <div class="category-filter">
+            <h2>Category Filters</h2>
+            <button type="button" class="filter-btn" data-category="all"> All Resources </button>
+            <button type="button" class="filter-btn" data-category="html"> HTML </button>
+            <button type="button" class="filter-btn" data-category="css">CSS </button>
+            <button type="button" class="filter-btn" data-category="javascript">JavaScript</button>
+        </div>
+    </section>
+</main>
+<dialog id="tutorial-modal">
+    <div class="modal-content">
+        <button type="button"
+            id="close-modal"
+            class="close-btn">
+            &times;
+        </button>
+
+        <h2 id="modal-title"></h2>
+        <p>
+            <strong>Category:</strong>
+            <span id="modal-category"></span>
+        </p>
+
+        <p>
+            <strong>Type:</strong>
+            <span id="modal-type"></span>
+        </p>
+
+        <p>
+            <strong>Difficulty:</strong>
+            <span id="modal-level"></span>
+        </p>
+
+        <p>
+            <strong>Estimated Time:</strong>
+            <span id="modal-duration"></span>
+        </p>
+
+        <p id="modal-description"></p>
+        <h3>Topics Covered</h3>
+        <ul id="modal-topics"></ul>
+        <a
+            id="modal-resource"
+            target="_blank"
+            rel="noopener">
+            Read the Lesson
+        </a>
+    </div>
+
+</dialog>
+<!-- Footer -->
+<footer>
+   <p>&copy; <span id="current-year"></span> TeachHub Portal | Kevin Cross Minchakpu | WDD 231 </p>
+   <p>Last Modified: <span id="last-modified"></span></p>
+</footer>
+</body>
+</html>

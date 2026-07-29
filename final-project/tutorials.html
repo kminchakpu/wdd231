@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeachHub | Video & Interactive Tutorials</title>
+    <meta name="description" content="Explore interactive tutorials, technical video playlists, and documentation guides for modern web application design.">
+    <meta name="author" content="Kevin Cross Minchakpu">
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!--Meta Graph-->
+    <meta property="og:title" content="TechHub | Frontend Development Resource Portal ">
+    <meta property="og:description" content="Explore interactive tutorials, technical video playlists, and documentation guides for modern web application design.">
+   <meta property="og:image" content="https://kminchakpu.github.io/wdd231/final-project/images/logo.svg">
+    <meta property="og:url" content="https://kminchakpu.github.io/wdd231/.html">
+    <meta property="og:type" content="website">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+     <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+
+    <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    
+    <script src="scripts/tutorials.js" type="module"></script>
+
+</head>
+<body>
+<!-- HEADER -->
+<header>
+    <div class="logo-area">
+        <img src="images/logo.webp" alt="TeachHub Logo" class="logo">
+        <p>Teach<span>Hub</span></p>
+    </div>
+    <button type="button" id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    <nav id="primary-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tutorials.html" class="active">Tutorials</a></li>
+            <li><a href="toolkit.html">Student Toolkit</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<section class="page-banner">
+<h2>Tutorial Explorer</h2>
+<p>
+Explore carefully selected tutorials, articles,
+videos and documentation covering HTML, CSS and
+JavaScript.
+</p>
+
+</section>
+<section class="tutorial-controls">
+<div>
+<label for="search">
+Search Tutorials
+</label>
+
+<input
+type="search"
+id="search"
+placeholder="Search tutorials...">
+</div>
+
+<div class="filter-buttons"><button type="button" class="tutorial-filter active-filter"
+data-category="all">All</button>
+<button type="button" class="tutorial-filter" data-category="html">HTML </button>
+<button type="button" class="tutorial-filter" data-category="css">CSS</button>
+<button type="button"class="tutorial-filter"data-category="javascript">JavaScript</button>
+</div>
+
+</section>
+<section
+id="tutorial-container"
+class="tutorial-grid">
+</section>
+</main>
+
+<!-- Modal -->
+<dialog id="tutorial-modal">
+<div class="modal-content">
+<button type="button" id="close-modal"class="close-btn">&times; </button>
+
+<h2 id="modal-title"></h2>
+<p>
+
+<strong>Category:</strong>
+<span id="modal-category"></span>
+</p>
+
+<p>
+<strong>Type:</strong>
+<span id="modal-type"></span>
+
+</p>
+
+<p>
+<strong>Difficulty:</strong>
+<span id="modal-level"></span>
+</p>
+
+<p>
+
+<strong>Estimated Time:</strong>
+<span id="modal-duration"></span>
+</p>
+
+<p id="modal-description"></p>
+<h3>Topics Covered</h3>
+<ul id="modal-topics"></ul>
+
+<a id="modal-resource" target="_blank"rel="noopener">Read the Lesson</a>
+</div>
+</dialog>
+
+<!-- Footer -->
+<footer>
+   <p>&copy; <span id="current-year"></span> TeachHub Portal | Kevin Cross Minchakpu | WDD 231 </p>
+   <p>Last Modified: <span id="last-modified"></span></p>
+</footer>
+</body>
+</html>

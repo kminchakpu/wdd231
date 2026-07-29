@@ -1,0 +1,72 @@
+/* =====================================
+   TABLET (768px+)
+===================================== */
+
+@media screen and (min-width:768px){
+
+    /* Navigation */
+
+    #menu-toggle{
+
+        display:none;
+
+    }
+
+    #primary-nav{
+
+        position:static;
+        display:block;
+        width:auto;
+        background:none;
+
+    }
+
+    #primary-nav ul{
+
+        flex-direction:row;
+        gap:1rem;
+
+    }
+
+    #primary-nav a{
+
+        border:none;
+        padding:.75rem 1rem;
+        border-radius:var(--radius);
+
+    }
+
+
+    /* Home Grid */
+
+    .home-grid{
+
+        display:grid;
+        grid-template-columns:
+        280px
+        1fr;
+
+        gap:1.5rem;
+
+    }
+
+    .featured-resources{
+        grid-column:2;
+        grid-row:1 / span 2;
+
+    }
+
+    .tutorial-controls{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:flex-end;
+
+    }
+
+    .tutorial-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+}

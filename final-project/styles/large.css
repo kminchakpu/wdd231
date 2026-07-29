@@ -1,0 +1,64 @@
+/* =====================================
+   DESKTOP (1024px+)
+===================================== */
+
+@media screen and (min-width:1024px){
+
+    .logo-area h1 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    color: var(--white);
+    }
+
+    .logo-area span {
+        color: var(--accent);
+    }
+
+    .logo-area img.logo {
+    width: 60px;
+    height: auto;
+    }
+
+    main{
+
+        max-width:1300px;
+        margin:auto;
+
+    }
+
+       .hero {
+        padding:5rem 3rem;
+        border-radius: var(--border-radius);
+        margin-top: 1rem;
+
+    }
+  
+
+    .hero h2{
+        font-size:3rem;
+
+    }
+
+    .home-grid{
+        grid-template-columns:
+        300px
+        1fr;
+        gap:2rem;
+
+    }
+
+    #featured-cards{
+        display:grid;
+        grid-template-columns:
+        repeat(3,1fr);
+        gap:1.5rem;
+
+    }
+
+    .tutorial-grid{
+        grid-template-columns:
+        repeat(3,1fr);
+
+    }
+
+}

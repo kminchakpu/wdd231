@@ -1,0 +1,26 @@
+[
+    {
+        "term": "Semantic HTML",
+        "definition": "Semantic HTML uses meaningful elements like header, nav, main, section and footer to improve accessibility and document structure."
+    },
+    {
+        "term": "CSS Grid",
+        "definition": "CSS Grid is a two-dimensional layout system used to build responsive page layouts."
+    },
+    {
+        "term": "Flexbox",
+        "definition": "Flexbox is a one-dimensional layout model that aligns and distributes space among items."
+    },
+    {
+        "term": "Fetch API",
+        "definition": "The Fetch API allows JavaScript to request resources asynchronously from a server."
+    },
+    {
+        "term": "DOM",
+        "definition": "The Document Object Model represents the structure of an HTML document and allows JavaScript to manipulate it."
+    },
+    {
+        "term": "Local Storage",
+        "definition": "Local Storage allows websites to store data in the browser that persists after the page is closed."
+    }
+]

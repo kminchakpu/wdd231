@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "title": "HTML5 Semantic Structure & Layouts",
+    "category": "html",
+    "type": "Article",
+    "level": "Beginner",
+    "description": "Master clean document architecture, landmark elements, and accessibility foundations.",
+    "topics": [
+      "Semantic HTML",
+      "Header, Main & Footer",
+      "Accessibility",
+      "Document Structure"
+    ],
+    "image": "images/html.webp",
+    "resource": "https://developer.mozilla.org/en-US/docs/Learn/HTML",
+    "duration": "15 min read",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "CSS Grid Layout Complete Guide",
+    "category": "css",
+    "type": "Tutorial",
+    "level": "Intermediate",
+    "description": "A comprehensive walkthrough covering template rows, columns, tracks, and implicit grids.",
+    "topics": [
+      "Grid Containers",
+      "Grid Items",
+      "Template Areas",
+      "Responsive Layouts"
+    ],
+    "image": "images/css.webp",
+    "resource": "https://css-tricks.com/snippets/css/complete-guide-grid/",
+    "duration": "25 min read",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Modern JavaScript ES Modules",
+    "category": "javascript",
+    "type": "Documentation",
+    "level": "Intermediate",
+    "description": "Learn how to modularize your scripts using standard import and export statements.",
+    "topics": [
+      "import",
+      "export",
+      "Named Exports",
+      "Default Exports"
+    ],
+    "image": "images/javascript.webp",
+    "resource": "https://javascript.info/modules-intro",
+    "duration": "20 min read",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "title": "Accessible Forms & Inputs Guide",
+    "category": "html",
+    "type": "Article",
+    "level": "Beginner",
+    "description": "Implement accessible forms using appropriate input types, labels, fieldsets, and validation.",
+    "topics": [
+      "Labels",
+      "Input Types",
+      "Fieldsets",
+      "Accessibility"
+    ],
+    "image": "images/html.webp",
+    "resource": "https://web.dev/learn/forms/",
+    "duration": "18 min read",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "Flexbox Mastery & Alignment",
+    "category": "css",
+    "type": "Tutorial",
+    "level": "Beginner",
+    "description": "Understand main and cross-axis alignment, flex growth, shrinking, and responsive wrapping.",
+    "topics": [
+      "Flex Direction",
+      "Justify Content",
+      "Align Items",
+      "Flex Wrap"
+    ],
+    "image": "images/css.webp",
+    "resource": "https://flexboxfroggy.com/",
+    "duration": "30 min practice",
+    "featured": true
+  },
+  {
+    "id": 6,
+    "title": "Asynchronous JavaScript & Fetch API",
+    "category": "javascript",
+    "type": "Video",
+    "level": "Advanced",
+    "description": "Master Promises, async/await syntax, dynamic JSON parsing, and HTTP error handling.",
+    "topics": [
+      "Promises",
+      "Async/Await",
+      "Fetch API",
+      "Error Handling"
+    ],
+    "image": "images/javascript.webp",
+    "resource": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch",
+    "duration": "40 min video",
+    "featured": true
+  },
+  {
+    "id": 7,
+    "title": "Responsive Images & WebP Optimization",
+    "category": "html",
+    "type": "Article",
+    "level": "Intermediate",
+    "description": "Optimize image assets using srcset, sizes attributes, lazy loading, and modern image formats.",
+    "topics": [
+      "srcset",
+      "sizes",
+      "Lazy Loading",
+      "WebP Images"
+    ],
+    "image": "images/html.webp",
+    "resource": "https://web.dev/learn/images/",
+    "duration": "12 min read",
+    "featured": false
+  },
+  {
+    "id": 8,
+    "title": "CSS Custom Properties (Variables)",
+    "category": "css",
+    "type": "Documentation",
+    "level": "Beginner",
+    "description": "Build dynamic theme systems using CSS variables with fallback values and root scoping.",
+    "topics": [
+      "CSS Variables",
+      ":root",
+      "Fallback Values",
+      "Theming"
+    ],
+    "image": "images/css.webp",
+    "resource": "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties",
+    "duration": "10 min read",
+    "featured": false
+  },
+  {
+    "id": 9,
+    "title": "DOM Manipulation & Event Delegation",
+    "category": "javascript",
+    "type": "Tutorial",
+    "level": "Intermediate",
+    "description": "Efficiently query elements, update content, and manage dynamic user interactions.",
+    "topics": [
+      "querySelector",
+      "Event Listeners",
+      "Event Delegation",
+      "DOM Updates"
+    ],
+    "image": "images/javascript.webp",
+    "resource": "https://javascript.info/event-delegation",
+    "duration": "22 min read",
+    "featured": true
+  },
+  {
+    "id": 10,
+    "title": "HTML Metadata & Open Graph SEO",
+    "category": "html",
+    "type": "Article",
+    "level": "Beginner",
+    "description": "Optimize web page metadata for search engines and social media sharing.",
+    "topics": [
+      "Meta Tags",
+      "Open Graph",
+      "SEO",
+      "Favicons"
+    ],
+    "image": "images/html.webp",
+    "resource": "https://ogp.me/",
+    "duration": "8 min read",
+    "featured": false
+  },
+  {
+    "id": 11,
+    "title": "Container Queries & Fluid Typography",
+    "category": "css",
+    "type": "Video",
+    "level": "Advanced",
+    "description": "Go beyond viewport media queries with container queries and scalable typography.",
+    "topics": [
+      "Container Queries",
+      "Clamp()",
+      "Fluid Fonts",
+      "Responsive Components"
+    ],
+    "image": "images/css.webp",
+    "resource": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries",
+    "duration": "15 min video",
+    "featured": false
+  },
+  {
+    "id": 12,
+    "title": "Local Storage State Management",
+    "category": "javascript",
+    "type": "Tutorial",
+    "level": "Beginner",
+    "description": "Store and retrieve structured data in the browser across sessions.",
+    "topics": [
+      "localStorage",
+      "JSON.stringify",
+      "JSON.parse",
+      "Persistence"
+    ],
+    "image": "images/javascript.webp",
+    "resource": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+    "duration": "14 min read",
+    "featured": false
+  },
+  {
+    "id": 13,
+    "title": "ARIA Roles & Web Accessibility",
+    "category": "html",
+    "type": "Documentation",
+    "level": "Intermediate",
+    "description": "Ensure web applications meet accessibility standards for assistive technologies.",
+    "topics": [
+      "ARIA",
+      "Screen Readers",
+      "WCAG",
+      "Keyboard Navigation"
+    ],
+    "image": "images/html.webp",
+    "resource": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+    "duration": "35 min read",
+    "featured": false
+  },
+  {
+    "id": 14,
+    "title": "CSS Animations & Keyframes",
+    "category": "css",
+    "type": "Tutorial",
+    "level": "Intermediate",
+    "description": "Create engaging user interfaces using transitions, transforms, and keyframe animations.",
+    "topics": [
+      "Transitions",
+      "Transforms",
+      "@keyframes",
+      "Animation Timing"
+    ],
+    "image": "images/css.webp",
+    "resource": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations",
+    "duration": "20 min read",
+    "featured": false
+  },
+  {
+    "id": 15,
+    "title": "JavaScript Array Methods in Depth",
+    "category": "javascript",
+    "type": "Article",
+    "level": "Intermediate",
+    "description": "Transform, aggregate, and search datasets using the most common array methods.",
+    "topics": [
+      "map()",
+      "filter()",
+      "reduce()",
+      "forEach()"
+    ],
+    "image": "images/javascript.webp",
+    "resource": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "duration": "28 min read",
+    "featured": false
+  }
+]
