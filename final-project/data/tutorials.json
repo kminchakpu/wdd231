@@ -12,7 +12,7 @@
       "Accessibility",
       "Document Structure"
     ],
-    "image": "images/html.webp",
+    "image": "images/html5.webp",
     "resource": "https://developer.mozilla.org/en-US/docs/Learn/HTML",
     "duration": "15 min read",
     "featured": true
@@ -30,7 +30,7 @@
       "Template Areas",
       "Responsive Layouts"
     ],
-    "image": "images/css.webp",
+    "image": "images/css-grid.webp",
     "resource": "https://css-tricks.com/snippets/css/complete-guide-grid/",
     "duration": "25 min read",
     "featured": true
@@ -48,7 +48,7 @@
       "Named Exports",
       "Default Exports"
     ],
-    "image": "images/javascript.webp",
+    "image": "images/js-esm.webp",
     "resource": "https://javascript.info/modules-intro",
     "duration": "20 min read",
     "featured": true
@@ -66,7 +66,7 @@
       "Fieldsets",
       "Accessibility"
     ],
-    "image": "images/html.webp",
+    "image": "images/form-accessibility.webp",
     "resource": "https://web.dev/learn/forms/",
     "duration": "18 min read",
     "featured": false
@@ -84,7 +84,7 @@
       "Align Items",
       "Flex Wrap"
     ],
-    "image": "images/css.webp",
+    "image": "images/css-flex.webp",
     "resource": "https://flexboxfroggy.com/",
     "duration": "30 min practice",
     "featured": true
@@ -102,7 +102,7 @@
       "Fetch API",
       "Error Handling"
     ],
-    "image": "images/javascript.webp",
+    "image": "images/js-fetch.webp",
     "resource": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch",
     "duration": "40 min video",
     "featured": true
@@ -120,7 +120,7 @@
       "Lazy Loading",
       "WebP Images"
     ],
-    "image": "images/html.webp",
+    "image": "images/image-optimization.webp",
     "resource": "https://web.dev/learn/images/",
     "duration": "12 min read",
     "featured": false
@@ -138,7 +138,7 @@
       "Fallback Values",
       "Theming"
     ],
-    "image": "images/css.webp",
+    "image": "images/css-variables.webp",
     "resource": "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties",
     "duration": "10 min read",
     "featured": false
@@ -156,7 +156,7 @@
       "Event Delegation",
       "DOM Updates"
     ],
-    "image": "images/javascript.webp",
+    "image": "images/event-delegation.webp",
     "resource": "https://javascript.info/event-delegation",
     "duration": "22 min read",
     "featured": true
@@ -174,7 +174,7 @@
       "SEO",
       "Favicons"
     ],
-    "image": "images/html.webp",
+    "image": "images/open-graph.webp",
     "resource": "https://ogp.me/",
     "duration": "8 min read",
     "featured": false
@@ -192,7 +192,7 @@
       "Fluid Fonts",
       "Responsive Components"
     ],
-    "image": "images/css.webp",
+    "image": "images/container-queries.webp",
     "resource": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries",
     "duration": "15 min video",
     "featured": false
@@ -228,7 +228,7 @@
       "WCAG",
       "Keyboard Navigation"
     ],
-    "image": "images/html.webp",
+    "image": "images/aria.webp",
     "resource": "https://www.w3.org/WAI/standards-guidelines/wcag/",
     "duration": "35 min read",
     "featured": false
@@ -246,7 +246,7 @@
       "@keyframes",
       "Animation Timing"
     ],
-    "image": "images/css.webp",
+    "image": "images/css-animate.webp",
     "resource": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations",
     "duration": "20 min read",
     "featured": false
@@ -264,7 +264,7 @@
       "reduce()",
       "forEach()"
     ],
-    "image": "images/javascript.webp",
+    "image": "images/js-array.webp",
     "resource": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
     "duration": "28 min read",
     "featured": false
