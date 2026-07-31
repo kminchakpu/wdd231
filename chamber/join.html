@@ -27,8 +27,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <script src="scripts/join.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/date.js" defer></script>
 </head>
 <body>
     <header>
@@ -47,20 +45,22 @@
             </ul>
         </nav>
     </header>
-<main class="join-container">
-        <!-- Membership Application Form -->
+<main>
+    <h1 class="join-heading">Join the Kano Chamber of Commerce</h1>
+    <div class="join-container">
+         <!-- Membership Application Form -->
         <section class="form-section">
             <h2>Membership Application</h2>
             <form method="get" action="thankyou.html" id="membership-form">
                 
                 <label title="Applicant's First Name">
                     <span>First Name*</span>
-                    <input type="text" name="firstname" id="firstname" autocomplete="given-name" required>
+                    <input type="text" name="firstname" id="firstname" autocomplete="given-name" title="Enter your first name" required>
                 </label>
 
                 <label title="Applicant's Last Name">
                     <span>Last Name*</span>
-                    <input type="text" name="lastname" id="lastname" autocomplete="family-name" required>
+                    <input type="text" name="lastname" id="lastname" autocomplete="family-name" title="Enter your last name" required>
                 </label>
 
                 <label title="Organizational Title (Alpha, hyphens, spaces only. Min 7 characters)">
@@ -72,17 +72,17 @@
 
                 <label title="Applicant's Email Address">
                     <span>Email Address*</span>
-                    <input type="email" name="email" id="email" autocomplete="email" placeholder="kevinomics101@example.com" required>
+                    <input type="email" name="email" id="email" autocomplete="email" placeholder="kevinomics101@example.com" title="Enter your email address" required>
                 </label>
 
                 <label title="Applicant's Mobile Phone Number">
                     <span>Mobile Phone Number*</span>
-                    <input type="tel" name="phone" id="phone" autocomplete="tel" required>
+                    <input type="tel" name="phone" id="phone" autocomplete="tel" title="Enter your mobile phone number" required>
                 </label>
 
                 <label title="Business or Organization Name">
                     <span>Business/Organization Name*</span>
-                    <input type="text" name="orgname" id="orgname" autocomplete="organization" required>
+                    <input type="text" name="orgname" id="orgname" autocomplete="organization" title="Enter your business or organization name" required>
                 </label>
 
                 <fieldset>
@@ -107,7 +107,7 @@
 
                 <label title="Business or Organization Description">
                     <span>Business Description</span>
-                    <textarea name="description" id="description" rows="4"></textarea>
+                    <textarea name="description" id="description" rows="4" title="Describe your business or organization"></textarea>></textarea>
                 </label>
 
                 <!-- Hidden Timestamp Field -->
@@ -139,6 +139,7 @@
                 </div>
             </div>
         </section>
+    </div>
     </main>
 
     <!-- Modals (Using HTML5 dialog elements for ideal keyboard trapping/accessibility) -->

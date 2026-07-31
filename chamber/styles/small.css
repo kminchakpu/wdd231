@@ -526,6 +526,10 @@ main h2 {
     color: var(--text-color);
 }
 
+.join-heading {
+    text-align: center;
+}
+
 .form-section h2,
 .cards-section h2 {
     font-family: var(--heading-font);
