@@ -659,10 +659,19 @@ fieldset legend {
     color: var(--primary-color);
 }
 
-.membership-card.np-card { border-left-color: var(--midnight-violet); }
-.membership-card.bronze-card { border-left-color: var(--gray-border); }
-.membership-card.silver-card { border-left-color: var(--secondary-color); background-color: rgba(230, 241, 74, 0.05); }
-.membership-card.gold-card { border-left-color: var(--sunflower); background-color: rgba(23, 42, 58, 0.03); }
+.membership-card.np-card { 
+    border-left-color: var(--midnight-violet); 
+}
+.membership-card.bronze-card { 
+    border-left-color: var(--gray-border); 
+}
+.membership-card.silver-card { 
+    border-left-color: var(--secondary-color); 
+    background-color: rgba(230, 241, 74, 0.05); }
+.membership-card.gold-card {
+    border-left-color: var(--sunflower);
+    background-color: rgb(250, 248, 236);
+}
 
 /* --- Membership Card Buttons --- */
 .open-modal-btn {
