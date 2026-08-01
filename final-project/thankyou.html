@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeachHub | Frontend Development Resource Portal</title>
+    <meta name="description" content="Recommend high-quality documentation or tutorial videos to be featured on TeachHub.">
+    <meta name="author" content="Kevin Cross Minchakpu">
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!--Meta Graph-->
+    <meta property="og:title" content="TechHub | Frontend Development Resource Portal ">
+    <meta property="og:description" content="Recommend high-quality documentation or tutorial videos to be featured on TeachHub.">
+   <meta property="og:image" content="https://kminchakpu.github.io/wdd231/final_project/images/logo.webp">
+    <meta property="og:url" content="https://kminchakpu.github.io/wdd231/toolkit.html">
+    <meta property="og:type" content="website">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+      <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+
+    <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+   <script type="module" src="scripts/thankyou.js"></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <div class="logo-area">
+        <img src="images/logo.webp" alt="TeachHub Logo" class="logo">
+        <p>Teach<span>Hub</span></p>
+    </div>
+    <button type="button" id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    <nav id="primary-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="toolkit.html" class="active">Student Toolkit</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Main Thank You Card Layout -->
+  <!-- Main Content -->
+<main class="thankyou-container">
+  <section class="confirmation-card">
+    <div class="success-icon">&#10004;</div>
+    <h2>Recommendation Received!</h2>
+    <p>Thank you for submitting a learning resource to TeachHub. We are thrilled to review new assets to help frontend developers learn.</p>
+    
+    <hr class="divider">
+
+    <h3>Submitted Resource Details</h3>
+    <!-- Target container for our JavaScript data-dump extraction -->
+    <div id="data-review-display" class="loading-fallback">
+      Extracting record parameters securely...
+    </div>
+
+    <a href="index.html" class="home-btn">Return to Dashboard</a>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+   <p>&copy; <span id="current-year"></span> TeachHub Portal | Kevin Cross Minchakpu | WDD 231 </p>
+   <p>Last Modified: <span id="last-modified"></span></p>
+</footer>
+</body>
+</html>
