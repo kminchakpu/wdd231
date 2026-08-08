@@ -783,6 +783,24 @@ main {
     transform: translateY(-2px);
 }
 
+.video-demo {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+   
+}
+.video-demo:hover {
+    color: var(--primary-light);
+    text-decoration: underline;
+}
+
 /* ==========================
    RESPONSIVE
 ========================== */
+
+
+
+
+
